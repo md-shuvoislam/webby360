@@ -138,9 +138,18 @@ add_action( 'widgets_init', 'webby360_widgets_init' );
  * Enqueue scripts and styles.
  */
 function webby360_scripts() {
+
+	// theme css 
+	wp_enqueue_style( 'webby360-fonts', '//fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap' );
+	wp_enqueue_style( 'webby360-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'webby360-fontawesome-css', get_template_directory_uri() . '/css/fontawesome.css', array(), _S_VERSION );
 	wp_enqueue_style( 'webby360-style', get_stylesheet_uri(), array(), _S_VERSION );
+
 	wp_style_add_data( 'webby360-style', 'rtl', 'replace' );
 
+	// theme js
+
+	wp_enqueue_script( 'webby360-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'webby360-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
