@@ -83,6 +83,49 @@ get_header();
     </div>
 </section>
 
+<!-- strategy section start  -->
+
+<section class="strategy-area">
+    <div class="container">
+        <div class="row">
+            <h3>Our Strategy</h3>
+            <h2>Always take time to think before 
+            you do something</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="strategry-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/research.png" alt="Research">
+                    <h4>Research</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="strategry-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/planning.png" alt="Planning">
+                    <h4>Planning</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="strategry-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/strategry.png" alt="Strategy">
+                    <h4>Strategy</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="strategry-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/optimization.png" alt="Optimization">
+                    <h4>Optimization</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="strategry-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/result.png" alt="Results">
+                    <h4>Results</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php get_footer(); ?>
