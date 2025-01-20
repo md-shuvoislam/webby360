@@ -12,19 +12,27 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'webby360' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'webby360' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'webby360' ), 'webby360', '<a href="https://devshuvo.xyz">Md Shuvo Islam</a>' );
-				?>
-		</div><!-- .site-info -->
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="site-info">
+						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'webby360' ) ); ?>">
+							<?php
+							/* translators: %s: CMS name, i.e. WordPress. */
+							printf( esc_html__( 'Proudly powered by %s', 'webby360' ), 'WordPress' );
+							?>
+						</a>
+						<span class="sep"> | </span>
+							<?php
+							/* translators: 1: Theme name, 2: Theme author. */
+							printf( esc_html__( 'Theme: %1$s by %2$s.', 'webby360' ), 'webby360', '<a href="https://devshuvo.xyz">Md Shuvo Islam</a>' );
+							?>
+					</div><!-- .site-info -->
+				</div>
+			</div>
+		</div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
