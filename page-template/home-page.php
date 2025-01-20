@@ -200,6 +200,34 @@ get_header();
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="trusted-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Best Brand Helpers.png" alt="Best Brand Helpers">
+                    <p>Best Brand Helpers</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trusted-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Smart Services.png" alt="Smart Services">
+                    <p>Smart Services</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trusted-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Advanced Planning.png" alt="Advanced Planning">
+                    <p>Advanced Planning</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trusted-item">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Happy Clients.png" alt="Happy Clients">
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>
