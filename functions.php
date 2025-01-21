@@ -50,6 +50,8 @@ function webby360_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'webby360' ),
+			'menu-footer-top' => esc_html__( 'Footer Top Menu', 'webby360' ),
+			'menu-footer-bottom' => esc_html__( 'Footer Bottom Menu', 'webby360' ),
 		)
 	);
 

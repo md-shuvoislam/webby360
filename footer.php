@@ -14,21 +14,75 @@
 	<footer id="colophon" class="site-footer">
 	
 		<div class="container">
-			<div class="row">
+
+			<!-- footer top -->
+
+			<div class="row footer-top">
+				<div class="col-8">
+					<h2>Schedule A Meeting to Grow Your Business</h2>
+				</div>
+				<div class="col-4">
+					<a href="#">Book Now</a>
+				</div>
+			</div>
+
+			<div class="row footer-middle">
 				<div class="col">
-					<div class="site-info">
-						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'webby360' ) ); ?>">
-							<?php
-							/* translators: %s: CMS name, i.e. WordPress. */
-							printf( esc_html__( 'Proudly powered by %s', 'webby360' ), 'WordPress' );
+					<div class="menu-footer-top">
+						<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'menu-footer-top',
+									'menu_id'        => 'footer-menu-top',
+								)
+							);
+						?>
+					</div>
+				</div>
+				<div class="col">
+					<div class="footer-social">
+						<ul>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footer-bottom">
+				<div class="col">
+					<p>© 2025 Webby360. All rights reserved.</p>
+				</div>
+				<div class="col">
+					<div class="site-branding">
+						<?php
+						the_custom_logo();
+						if ( is_front_page() && is_home() ) :
 							?>
-						</a>
-						<span class="sep"> | </span>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php
-							/* translators: 1: Theme name, 2: Theme author. */
-							printf( esc_html__( 'Theme: %1$s by %2$s.', 'webby360' ), 'webby360', '<a href="https://devshuvo.xyz">Md Shuvo Islam</a>' );
+						else :
 							?>
-					</div><!-- .site-info -->
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<?php
+						endif;
+						$webby360_description = get_bloginfo( 'description', 'display' );
+						if ( $webby360_description || is_customize_preview() ) :
+							?>
+							<p class="site-description"><?php echo $webby360_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+						<?php endif; ?>
+					</div><!-- .site-branding -->
+				</div>
+				<div class="col">
+					<?php
+						wp_nav_menu(
+							array(
+							'theme_location' => 'menu-footer-bottom',
+							'menu_id'        => 'footer-menu-bottom',
+							)
+						);
+					?>
 				</div>
 			</div>
 		</div>
