@@ -48,7 +48,7 @@
 						<?php endif; ?>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="col-8">
+				<div class="col-8 text-center justify-content-center">
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'webby360' ); ?></button>
 						<?php

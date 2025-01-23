@@ -647,6 +647,11 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+
+.site-header {
+    padding: 40px 0px;
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -690,11 +695,14 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	padding: 0px 12px;
 }
 
 .main-navigation a {
-	display: block;
-	text-decoration: none;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
 }
 
 /* Small menu. */
@@ -710,7 +718,7 @@ textarea {
 	}
 
 	.main-navigation ul {
-		display: flex;
+		display: inline-flex;
 	}
 }
 
@@ -739,6 +747,92 @@ textarea {
 .post-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
+}
+
+.header-btn {
+    text-align: right;
+}
+
+.header-btn a {
+    background: #02458C;
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+}
+
+/* hero area 
+--------------------------------------------- */
+
+section.hero-area {
+    min-height: 720px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+}
+
+section.hero-area h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+}
+
+section.hero-area p {
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+}
+.hero-btn {
+    display: block;
+    background: white;
+    color: #02458C;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 12px 24px;
+    line-height: 150%;
+}
+
+/* Services Section
+--------------------------------------------- */
+.service-top-left h3 {
+    color: #00A3D7;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section.services-area {
+    padding: 64px 0;
+}
+
+.service-top-left h2 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.services-top-right p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.services-item h4 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.services-item a {
+    color: #02458C;
+    text-decoration: none;
+}
+
+section.service-area-bottom {
+    padding-bottom: 64px;
 }
 
 /* Posts and pages

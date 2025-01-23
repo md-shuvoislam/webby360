@@ -13,9 +13,11 @@ get_header();
     <div class="container">
         <div class="row">
             <h1>Build Your Online Presence</h1>
-            <p>We are a Digital Marketing Agency skilled in
+            <p>We are a Digital Marketing Agency skilled in <br>
             Online Marketing Strategies, Web Design and Web Development</p>
-            <a href="" class="hero-btn">Get A Free SEO Audit</a>
+            <div class="hero-btn">
+                <a href="#">Get A Free SEO Audit</a>
+            </div>
         </div>
     </div>
 </section>
